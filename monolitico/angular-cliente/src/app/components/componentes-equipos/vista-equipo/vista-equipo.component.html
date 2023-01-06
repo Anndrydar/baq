@@ -1,0 +1,36 @@
+<div class="container-fluid py-4">
+    <div class="card text-center">
+        <div class="card-header">
+          Equipos
+        </div>
+        <div class="card-body">
+          <a href="/crear-equipo" class="btn btn-primary">Gestionarlos</a>
+        </div>
+        <div class="card-header">
+          <h5 class="card-title">Mira los equipos creados</h5>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+<div class="container-fluid py-4">
+    <table class="table ">
+      <thead>
+        <tr>
+          <th scope="col">Equipo</th>
+          <th scope="col">Descripcion</th>
+          <th scope="col">Serie</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr *ngFor="let Equi of equipos">
+          <td>{{Equi.nombre}}</td>
+          <td>{{Equi.descripcion}}</td>
+          <td>{{Equi.serie}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
